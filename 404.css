@@ -1,0 +1,99 @@
+:root {
+  --bg-colour: rgb(255, 255, 255);
+  --colour: rgb(35, 32, 45);
+  --heading-blue: rgb(0, 0, 0);
+  --link-blue: rgb(84, 144, 255);
+  --link-hover-blue: rgb(66, 132, 255);
+  --nav-colour: rgb(0, 0, 0);
+  --nav-hover-colour: rgb(0, 0, 0);
+}
+
+html, body {
+  font-family: Lato, sans-serif;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  background-color: var(--bg-colour);
+  max-width: 1330px;
+}
+
+nav {
+  overflow: hidden;
+  padding: 20px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(35, 32, 45);
+  border-radius: 6px;
+}
+
+#navicon {
+  float: left;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+#navleft {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 22px;
+  float: left;
+  vertical-align: center;
+  padding: 4px 6px;
+  border-radius: 6px;
+  background-color: #508dff;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.navright {
+  text-decoration: none;
+  color: var(--bg-colour);
+  padding: 12px 22px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 2;
+  transition: color 0.1s;
+  -webkit-transition: color 0.1s;
+  font-weight: bold;
+}
+
+.navright:hover {
+  color: var(--link-blue);
+}
+
+nav a img {
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 28px;
+}
+
+@media screen and (max-width: 600px) {
+  .navright {
+    display: none;
+  }
+}
+
+
+main {
+  text-align: center;
+  padding-top: 10%;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: #508dff;
+}

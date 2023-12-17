@@ -1,0 +1,39 @@
+:root {
+  --bg-colour: rgb(255, 255, 255);
+  --colour: rgb(35, 32, 45);
+  --nav-colour: rgb(0, 0, 0);
+  --nav-hover-colour: rgb(0, 0, 0);
+}
+
+html, body {
+  font-family: Lato, sans-serif;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  background-color: var(--bg-colour);
+  max-width: 1330px;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 75px;
+  height: 75px;
+  margin: -76px 0 0 -76px;
+  border: 8px solid #00ffc3;
+  border-radius: 50%;
+  border-top: 8px solid #508dff;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
